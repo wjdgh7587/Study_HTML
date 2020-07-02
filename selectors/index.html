@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selectors and Pseudo Selectors</title>
+        <meta charset="utf-8">
+        <style>
+            /* .submit{
+                background-color: red;
+            }
+            input[type="submit2"]{
+                background-color: blue;
+            } */
+            .container > .box{
+                background-color: yellow;
+            }
+            input{
+                border: 4px rgb(122, 20, 59) solid;
+            }
+            .box{
+                background-color: green;
+                height: 100px;
+                display: block;
+                border: 1px solid black;
+            }
+            .child{
+                width: 40px;
+            }
+            /* .box:first-child{
+                background-color: blueviolet;
+            }
+            .box:nth-child(2){
+                background-color: coral;
+            }
+            .box:nth-child(2n+2){
+                background-color: black;
+            }
+            .box:last-child{
+                background-color: pink;
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box">
+                <div class="box child"></div>
+            </div>
+            <div class="box"></div>
+            <div class="box">
+                <input type="password">
+                <input type="submit" class="submit">
+                <input type="submit2">
+            </div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            
+        </div>
+    </body>
+</html>
