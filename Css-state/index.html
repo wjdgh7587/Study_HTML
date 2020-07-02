@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Css-states!
+        </title>
+        <style>
+            .box{
+                background-color: red;
+                font-size: 40px;
+                transition: background-color .5s;
+            }
+            .box:hover{
+                background-color: burlywood;
+            }
+            .box:active{
+                background-color: green;
+            }
+            .box2:focus{
+                background-color: black;
+                /* The most powerful thing */
+            }
+        </style>
+    </head>
+    <body> 
+        <span class="box">lalalala</span>
+        <textarea name="box2" id="" cols="30" rows="10" class="box2"></textarea>
+    </body>
+</html>
