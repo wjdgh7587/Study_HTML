@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Position</title>
+        <style>
+            body, html{
+                height: 100%;
+                margin: 0;
+                padding:0; 
+                /* 브라우저가 가진 디폴트 값을 상쇄시키기 위하여 위와 같이 세팅 */
+            }
+            body{
+                height : 400%;
+                background-color: red;
+            }
+            /* position fixed first
+            #boxOne{
+                background-color: yellow;
+                height: 300px;
+                width: 300px;
+                position: static;
+            }
+            #boxTwo{ 
+                background-color: green;
+                height: 300px;
+                width: 100%;
+                position: fixed;
+                bottom: 30%;
+                left: 200px;
+            } */
+            .abs-box{
+                background-color: yellow;
+                width: 400px;
+                height: 400px;
+                position: relative;
+            }
+            .abs-child{
+                background-color: green;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="abs-box">
+            <div class="abs-child"></div>
+        </div>
+        <!-- The first fixed position
+        <div id="boxOne">
+            <div class="box-child"></div>
+        </div>
+        <div id="boxTwo">
+            <div class="box-child"></div>
+        </div> -->
+    </body>
+</html>
