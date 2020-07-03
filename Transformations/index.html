@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Transforamtions
+    </title>
+    <meta charset="utf-8">
+    <style>
+        /* .box{
+                width: 500px;
+                height: 500px;
+                background-color: aquamarine;
+                transform: rotate(20deg);
+                font-size: 300px;
+                color: white;
+                transition: ease-in-out .5s;
+            } */
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: aquamarine;
+            font-size: 300px;
+            color: white;
+            transition:  5s ease-in-out;
+            /* transition: color .4s ease-in; */
+        }
+
+        .box:hover {
+            background-color: bisque;
+            color: brown;
+            transform: rotate(1turn) scale(.5, .5);
+        }
+
+        .box2 {
+            position: relative;
+            transition-property: background-color, color;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+            text-align: left;
+            background-color: grey;
+            left: 5px;
+            top: 5px;
+            height: 26px;
+            color: white;
+            border-color: black;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-decoration: none;
+            box-shadow: 2px 2px 1px black;
+            padding: 2px 4px;
+            border: solid 1px black;
+        }
+
+        .box2:hover {
+            position: relative;
+            transition-property: background-color, color;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+            background-color: white;
+            color: black;
+            box-shadow: 2px 2px 1px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">box</div>
+    <div class="box2">box2</div>
+</body>
+
+</html>
