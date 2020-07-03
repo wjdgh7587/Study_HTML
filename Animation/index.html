@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Animations
+    </title>
+    <meta charset="utf-8">
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background: aquamarine;
+            font-size: 300px;
+            color: white;
+            animation: 3.5s scaleandRotateSquare ease-in-out;
+        }
+
+        @keyframes scaleandRotateSquare {
+            0% {
+                transform: none;
+            }
+
+            50% {
+                background: bisque;
+                color: blueviolet;
+                transform: rotate(3turn) scale(.5, .5) ;
+            }
+            100%{
+                transform: none;
+                color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">box</div>
+    <div class="box2">box2</div>
+</body>
+
+</html>
